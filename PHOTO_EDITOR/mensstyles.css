@@ -1,0 +1,176 @@
+html,
+body {
+    height: 100%;
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+}
+
+.back-btn1{
+    width:5vw;
+    height:10vh;
+    position:absolute;
+    z-index:13;
+}
+.back-btn1:hover{
+    background-color: rgba(211, 211, 211, 0.356);
+}
+
+.hairstyle_imagecontainer{
+    width:100vw;
+    height:80vh;
+
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.hs{
+    width: 10%;
+    height: 25%;
+    margin-left: 10px;
+}
+
+.hs:hover{
+    background-color: rgba(119, 136, 153, 0.315);
+}
+
+.mustache_container{
+    width:100vw;
+    height:80vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.mc{
+    width: 19%;
+    height: 22%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.mc:hover{
+    background-color: rgba(119, 136, 153, 0.315);
+}
+
+.beard_imagecontainer{
+    width:100vw;
+    height:80vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.b1{
+    width: 19%;
+    height: 35%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.b1:hover{
+    background-color: rgba(119, 136, 153, 0.137);
+}
+
+.eyebrow_imagecontainer{
+    width:100vw;
+    height:80vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.e1{
+    width: 19%;
+    height: 35%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.e1:hover{
+    background-color: rgba(119, 136, 153, 0.342);
+}
+
+.text_box1 {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container01{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+.center_buttons {
+    margin:auto;
+    display:block;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.one{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 5px 0;
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.one .two{
+    list-style: none;
+    text-align: center;
+    display:block;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.one .two :last-child{
+    border-right: none;
+}
+
+
+.one .two .three{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0px;
+}
+.video-container{
+    background-color: black;
+    width:100vw;
+    height:100vh;
+}
+.video{
+    height:100%;
+    width:100%;
+}
+.round1-btn{
+    height:6rem;
+    position:fixed;
+    width:6rem;
+    top:30%;
+    right:20px;
+    border-radius: 50%;
+}
+.click{
+    top:45%;
+    background-image: url('../PHOTO_EDITOR/imagefolder/c1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

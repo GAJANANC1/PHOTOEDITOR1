@@ -1,0 +1,173 @@
+html,
+body {
+    height: 100%;
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+}
+
+
+.back-btn2{
+    width:5vw;
+    height:10vh;
+    position:absolute;
+    z-index:13;
+}
+
+.back-btn2:hover{
+    background-color: rgba(128, 128, 128, 0.322);
+}
+
+.sunglasses_images{
+    width:100vw;
+    height:78vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.sun1{
+    width: 19%;
+    height: 28%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.sun1:hover{
+    background-color: rgba(119, 136, 153, 0.205);
+}
+
+
+.caps_images{
+    width:100vw;
+    height:78vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.cap1{
+    width: 31%;
+    height: 25%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.cap1:hover{
+    background-color: rgba(119, 136, 153, 0.253);
+}
+
+
+.chain_image{
+    width:100vw;
+    height:78vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.cn1{
+    width: 20%;
+    height: 30%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.cn1:hover{
+    background-color: rgba(119, 136, 153, 0.212);
+}
+
+.tie_image{
+    width:100vw;
+    height:78vh;
+    border-color: black;
+    background-color:rgba(99, 90, 90, 0.404);
+    display:flex;
+    z-index: 11;
+    flex-wrap: wrap;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+.te1{
+    width: 20%;
+    height: 15%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.te1:hover{
+    background-color: rgba(119, 136, 153, 0.199);
+}
+
+.text_box2 {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container22{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+.center_buttons {
+    margin:auto;
+    display:block;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.one1{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 20px 0;
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.one1 .two2{
+    list-style: none;
+    text-align: center;
+    display:block;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.one1 .two2 :last-child{
+    border-right: none;
+}
+
+
+.one1 .two2 .three3{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}

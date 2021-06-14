@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="1.style.css">
+
+    <link rel="stylesheet" href="camera.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="s2.css">
+    <link rel="stylesheet" href="s3.css">
+    <link rel="stylesheet" href="C4.css">
+    <link rel="stylesheet" href="mensstyles.css">
+    <link rel="stylesheet" href="mensstyledrawingtool.css">
+    <link rel="stylesheet" href="accessories.css">
+    <link rel="stylesheet" href="accessories_drawingtool.css">
+    <link rel="stylesheet" href="effect.css">
+    <link rel="stylesheet" href="effects_drawingtool.css">
+    <link rel="stylesheet" href="edit.css">
+    <link rel="stylesheet" href="edit_drawingtool.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- it contains first page where there are three options 
+            1.camera
+            2. image from filesystem
+            3. information
+    -->
+    <div id="container1">
+        <div class="main-container">
+            <h2>MENS PHOTO EDITOR</h2>
+        </div>
+
+        <button class="camera round-btn"></button>
+        <button class="files round-btn"> </button>
+        <button class="info round-btn"></button>
+
+        <div class="image">
+            <div class="image-container"></div>
+        </div>
+    </div>
+    <!-- it is the editor page where there are four options 
+          1. men styles
+          2. accessories
+          3.filter
+          4.edit
+        -->
+    <div id="container2">
+        <div class="text_box">
+            <div id="imageEditor">
+                <section id="editorContainer">
+                    <canvas id="editor"></canvas>
+                </section>
+            </div>
+            <div class="menu1-container">
+                <button class="styles round2-btn"></button>
+                <button class="accessories round2-btn"></button>
+                <button class="effects round2-btn"></button>
+                <button class="edit round2-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- it is a camera page where we can capture our image through click button-->
+    <div id="container3">
+        <div class="video-container">
+            <video class="video" autoplay></video>
+        </div>
+        <button class="click round1-btn"></button>
+    </div>
+
+    <!-- it is the information page which includes detailed description of project-->
+    <div id="container4">
+        <div class="back-btn5">
+            <img src="../PHOTO_EDITOR/backbutton.png"
+            width="50"
+            height="50"
+            alt="" class="tool-img zoom-out"> 
+        </div>
+        <div class="main-heading1">
+            <h2>
+                MENS PHOTO EDITOR
+            </h2>
+        </div>
+        <div class="main-heading2">
+            <h2>
+                FEATURES
+            </h2>
+        </div>
+        <div class="HEADING">
+            <div class="mhead1">
+                <h4 style="color:white">SET MEN STYLES</h4>
+                <P style="color:white"><b>In men styles there are four option.with the help of first option we can add hairstyle
+                    to images.second feature is adding mustache.we can add it to images and with the help of resize button we can fit it to image as required
+                    .Third option is add beard.there are many kinds of beard.you can select any of these.Fourth option is to add eyebrow.
+                    with its help we can set eyebrow of a person
+                    </b></P>
+            </div>
+            <div class="mhead2">
+                <h4 style="color:white">SET ACCESSORIES</h4>
+                <p style="color: white;"><b>Set accessories has four options.
+                    1.Sunglasses:- with the help of this option we can add sunglasses to images.
+                    2.Cap:-with the help of these option we can add cap to the image
+                    3.chain:this option is used to add chain
+                    4.tie:this option is used to add tie
+                    </b>
+                </p>
+            </div>
+            <div class="mhead3">
+                <h4 style="color:rgba(255, 255, 255, 0.445)"><b>SET EFFECTS</b></h4>
+                <p style="color:white"><b>This options contains three feature
+                    Adjust,Color and filter.with the help of adjust we can set contrast,brightness.
+                    color container helps to change the color of images.
+                    filter has many shads such grayish,bluish and many more.
+                    </b>
+                </p>
+            </div>
+            <div class="mhead4">
+                <h4 style="color:white"><b>PICTURE EDIT</b></h4>
+                <p style="color: white"><b>
+                    It containes features such as flip horizontal,flip vertical,rotate left,rotate right,resize,greyscale.
+                    flip horizontal flips the image horizontally.flip vertical flips the image vertically.rotate left rotate
+                    the image towards left side.resize resizes the image according to given height and width.greyscale converts
+                    the image into black and white.
+                </b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- it is the page of mens hairstyle it has four options
+             1. hair style
+             2. mustache
+             3.beard
+             4.eye brow
+    -->
+    <div id="container5">
+        <div id="container01">
+            <div class="text_box1">
+                
+                <div class="back-btn1">
+                    <img src="../PHOTO_EDITOR/backbutton.png"
+                    width="50"
+                    height="50"
+                    alt="" class="tool-img zoom-out"> 
+                </div>
+
+                <div id="drawing-tool">
+                    <section id="editorContainer1">
+                        <canvas id="editor1"></canvas>
+                    </section>
+                </div>
+                <!-- it contains different hairstyles from where we can select hairstyle-->
+                <div class="hairstyle_imagecontainer" id="BE">
+                    <div class="hairstyle1  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_1.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle2  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_2.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle3  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_3.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle4  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_4.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle5  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_5.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle6  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_6.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle7  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_7.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle8  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_8.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle9  hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_9.png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                    <div class="hairstyle10 hs">
+                        <img src="../PHOTO_EDITOR/png images/1.HAIR_STYLE_IMAGES/hairstyle_10 (2).png" width="100"
+                            height="100" alt="" class="tool-img1 zoom-out">
+                    </div>
+                </div>
+                <!-- it is the part which contains different mustache -->
+                <div class="mustache_container " id="job">
+                    <div class="mustache1 mc">
+                        <img src="../PHOTO_EDITOR/png images/2.MUSTACHE_IMAGES/mustache1.png" width="75" height="75"
+                            alt="" class="tool-img2 zoom-out">
+                    </div>
+                    <div class="mustache2 mc">
+                        <img src="../PHOTO_EDITOR/png images/2.MUSTACHE_IMAGES/mustache2.png" width="75" height="75"
+                            alt="" class="tool-img2 zoom-out">
+                    </div>
+                    <div class="mustache3 mc">
+                        <img src="../PHOTO_EDITOR/png images/2.MUSTACHE_IMAGES/mustache3.png" width="75" height="75"
+                            alt="" class="tool-img2 zoom-out">
+                    </div>
+                    <div class="mustache4 mc">
+                        <img src="../PHOTO_EDITOR/png images/2.MUSTACHE_IMAGES/mustache4.png" width="75" height="75"
+                            alt="" class="tool-img2 zoom-out">
+                    </div>
+                    <div class="mustache5 mc">
+                        <img src="../PHOTO_EDITOR/png images/2.MUSTACHE_IMAGES/mustache5.png" width="75" height="75"
+                            alt="" class="tool-img2 zoom-out">
+                    </div>
+                </div>
+                <!-- it contains different beard options from where we can select beard for our editor-->
+                <div class="beard_imagecontainer" id="twoyrs">
+                    <div class="beard1  b1">
+                        <img src="../PHOTO_EDITOR/png images/3.BEARD_IMAGES/beard_1.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="beard2  b1">
+                        <img src="../PHOTO_EDITOR/png images/3.BEARD_IMAGES/beard_2.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="beard3  b1">
+                        <img src="../PHOTO_EDITOR/png images/3.BEARD_IMAGES/beard_3.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="beard4  b1">
+                        <img src="../PHOTO_EDITOR/png images/3.BEARD_IMAGES/beard_4.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="beard5  b1">
+                        <img src="../PHOTO_EDITOR/png images/3.BEARD_IMAGES/beard_5.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="beard6  b1">
+                        <img src="../PHOTO_EDITOR/png images/3.BEARD_IMAGES/beard_7.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                </div>
+                <!-- it contains different eyebrow-->
+                <div class="eyebrow_imagecontainer" id="amz">
+                    <div class="eyebrow1  e1">
+                        <img src="../PHOTO_EDITOR/png images/4.EYE_BROW_IMAGES/eyebrow1.png" width="100" height="100"
+                            alt="" class="tool-img zoom-out">
+                    </div>
+                    <div class="eyebrow2  e1">
+                        <img src="../PHOTO_EDITOR/png images/4.EYE_BROW_IMAGES/eyebrow2.png" width="100" height="100"
+                            alt="" class="tool-img zoom-out">
+                    </div>
+                </div>
+
+                <div class="downicon-menu1">
+                    <ul class="one">
+                        <!--hair style option-->
+                        <li class="two hairstyleselect">
+                            <a class="three" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/imagefolder/hair_style_icon.png" width="50" height="50"
+                                        alt="" class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Hair Style">Hair Style</span></div>
+                            </a>
+                        </li>
+                        <!-- mustache option-->
+                        <li class="two mustacheselect">
+                            <a class="three" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/imagefolder/mustache_icon.png" width="50" height="50"
+                                        alt="" class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Mustache">Mustache</span></div>
+                            </a>
+                        </li>
+                        <!-- beard option-->
+                        <li class="two beardselect">
+                            <a class="three" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/imagefolder/beard_icon.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Beard">Beard</span></div>
+                            </a>
+                        </li>
+                        <!-- eye brow option-->
+                        <li class="two eyebrowselect">
+                            <a class="three" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/imagefolder/eye_brow_icon.jpg" width="50" height="50"
+                                        alt="" class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Eye Brow">Eye Brow</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- it is of accessories page.it contain four options
+            1.sunglasses
+            2.tie
+            3.chain
+            4.cap-->
+    <div id="container6">
+        <div id="container22">
+            <div class="text_box2">
+                
+                <div class="back-btn2">
+                    <img src="../PHOTO_EDITOR/backbutton.png"
+                    width="50"
+                    height="50"
+                    alt="" class="tool-img zoom-out"> 
+                </div>
+
+                <div id="drawing-tool2">
+                    <section id="editorContainer2">
+                        <canvas id="editor2"></canvas>
+                    </section>
+                </div>
+
+                <!-- it contain different option for sunglasses-->
+                <div class="sunglasses_images" id="sunday">
+                    <div class="sunglass1  sun1">
+                        <img src="../PHOTO_EDITOR/png images/5.SUNGLASSES/sunglasses1.png" width="100" height="100"
+                            alt="" class="tool-img zoom-out">
+                    </div>
+                    <div class="sunglass3  sun1">
+                        <img src="../PHOTO_EDITOR/png images/5.SUNGLASSES/sunglasses3.png" width="100" height="100"
+                            alt="" class="tool-img zoom-out">
+                    </div>
+                    <div class="sunglass8  sun1">
+                        <img src="../PHOTO_EDITOR/png images/5.SUNGLASSES/sunglasses8.png" width="100" height="100"
+                            alt="" class="tool-img zoom-out">
+                    </div>
+                    <div class="sunglass9  sun1">
+                        <img src="../PHOTO_EDITOR/png images/5.SUNGLASSES/sunglasses9.png" width="100" height="100"
+                            alt="" class="tool-img zoom-out">
+                    </div>
+                </div>
+
+                <!-- it contains different cap images-->
+                <div class="caps_images" id="monday">
+                   
+                    <div class="caps2  cap1">
+                        <img src="../PHOTO_EDITOR/png images/6.CAP_IMAGES/cap2.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="caps3  cap1">
+                        <img src="../PHOTO_EDITOR/png images/6.CAP_IMAGES/cap3.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="caps4  cap1">
+                        <img src="../PHOTO_EDITOR/png images/6.CAP_IMAGES/cap4.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                </div>
+                <!-- it contain different chain images-->
+                <div class="chain_image" id="tuesday">
+                   
+                    <div class="chain3  cn1">
+                        <img src="../PHOTO_EDITOR/png images/7.CHAIN_IMAGES/chain3.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="chain4  cn1">
+                        <img src="../PHOTO_EDITOR/png images/7.CHAIN_IMAGES/chain4.png" width="100" height="100" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                </div>
+                <!-- it contain different tie images-->
+                <div class="tie_image" id="wednesday">
+                    
+                    <div class="tie2  te1">
+                        <img src="../PHOTO_EDITOR/png images/8.TIE_IMAGES/tie2.png" width="200" height="200" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                   
+                     <div class="tie3  te1">
+                        <img src="../PHOTO_EDITOR/png images/8.TIE_IMAGES/tie3.png" width="200" height="200" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                    <div class="tie4  te1">
+                        <img src="../PHOTO_EDITOR/png images/8.TIE_IMAGES/tie4.png" width="200" height="200" alt=""
+                            class="tool-img zoom-out">
+                    </div>
+                </div>
+
+                <div class="downicon-menu2">
+                    <ul class="one1">
+                        <!-- it is a round button for sunglass-->
+                        <li class="two2 sunglass_click">
+                            <a class="three3" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/accessories/sunglasses.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Sunglasses">Sunglasses</span></div>
+                            </a>
+                        </li>
+                        <!-- it is a round button for caps-->
+                        <li class="two2 caps_click">
+                            <a class="three3" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/accessories/caps.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Caps">Caps</span></div>
+                            </a>
+                        </li>
+                        <!-- it is a button for chain-->
+                        <li class="two2 chain_click">
+                            <a class="three3" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/accessories/chain.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Chain">Chain</span></div>
+                            </a>
+                        </li>
+                        <!-- it is the round button option for tie-->
+                        <li class="two2 tie_click">
+                            <a class="three3" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/accessories/tie.jpg" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Tie">Tie</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- it is the page of filter container.it has three options
+         1.adjust container
+         2.filter container
+         3. color container-->
+    <div id="container7">
+        <div id="container111">
+            <div class="text_box3">
+                <div class="back-btn3">
+                    <img src="../PHOTO_EDITOR/backbutton.png"
+                    width="50"
+                    height="50"
+                    alt="" class="tool-img zoom-out"> 
+                </div>
+
+                <div id="drawing-tool3">
+                    <section id="editorContainer3">
+                        <canvas id="editor3">
+                           
+                        </canvas>
+                    </section>
+                </div>
+                <!-- adjust container
+                      1.contrast
+                      2.saturation
+                      3.sharpness-->
+                <div class="adjustcontainer" id="adj">
+                    <div class="slideContainer">
+                        <div class="contname"><b>Contrast</b></div>
+                        <input type="range" min="1" max="100" value="1" id="myRange1" class="slider">
+                    </div>
+
+                    <div class="slideContainer">
+                        <div class="contname"><b>Sharpness</b></div>
+                        <input type="range" min="1" max="100" value="1" id="myRange2" class="slider">
+                    </div>
+
+                    <div class="slideContainer">
+                        <div class="contname"><b>Saturation</b></div>
+                        <input type="range" min="1" max="100" value="1" id="myRange3" class="slider">
+                    </div>
+                </div>
+                <!-- filter container-->
+                <div class="filter-container" id="ssc">
+                    <div style="background-color: #f4a2613d" class="filter"></div>
+                    <div style="background-color: #e85d0440" class="filter"></div>
+                    <div style="background-color: #ad5d6d7a" class="filter"></div>
+                    <div style="background-color: #2195f323" class="filter"></div>
+                    <div style="background-color: #4caf4f31" class="filter"></div>
+                    <div class="filter"></div>
+                </div>
+
+                <!-- color container-->
+                <div class="color-container" id="hsc">
+                    <div style="background-color: rgba(169, 169, 169, 0.219)" class="color"></div>
+                    <div style="background-color: rgba(255, 182, 193, 0.26)" class="color"></div>
+                    <div style="background-color: rgba(173, 216, 230, 0.527)" class="color"></div>
+                    <div style="background-color: rgba(176, 196, 222, 0.568)" class="color"></div>
+                    <div style="background-color: rgba(32, 178, 171, 0.562)" class="color"></div>
+                    <div class="color"></div>
+                </div>
+
+                <div class="downicon-menu3">
+                    <ul class="one11">
+                        <!-- round adjust button-->
+                        <li class="two22 adjust">
+                            <a class="three33" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/effect/adjust.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Adjust">Adjust</span></div>
+                            </a>
+                        </li>
+                        <!-- round button for color container -->
+                        <li class="two22 colors1" id="colorsid">
+                            <a class="three33" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/effect/colors.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Colors">Colors</span></div>
+                            </a>
+                        </li>
+                        <!-- round button for filter container-->
+                        <li class="two22 filters">
+                            <a class="three33" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/effect/filters.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Filters">Filters</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page of edit having options 
+           1.flip horizontal
+           2.flip vertical
+           3.rotate left
+           4.rotate right
+           5.resize
+           6.greyscale-->
+
+    <div id="container8">
+        <div id="container1111">
+            <div class="back-btn4">
+                <img src="../PHOTO_EDITOR/backbutton.png"
+                width="50"
+                height="50"
+                alt="" class="tool-img zoom-out"> 
+            </div>
+
+            <div class="text_box4">
+                <div id="drawing-tool4">
+                    <section id="editorContainer4">
+                        <canvas id="editor4"></canvas>
+                    </section>
+                </div>
+
+                <div class="downicon-menu2">
+                    <ul class="one111">
+                        <!-- button for flip horizontal -->
+                        <li class="two222 flip_horizontal">
+                            <a class="three333" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/edit/filp_horizontal.png" ; width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Flex Horizontal">Flip Horizontal</span></div>
+                            </a>
+                        </li>
+                        <li class="two222 flip_vertical">
+                            <a class="three333" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/edit/flip_vertical.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Flip Vertical">Flip Vertical</span></div>
+                            </a>
+                        </li>
+                        <li class="two222 rotate_left">
+                            <a class="three333" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/edit/rotate_left.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Rotate Left">Rotate left</span></div>
+                            </a>
+                        </li>
+                        <li class="two222 rotate_right">
+                            <a class="three333" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/edit/rotate_right.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Rotate Right">Rotate Right</span></div>
+                            </a>
+                        </li>
+                        <li class="two222 resize">
+                            <a class="three333" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/edit/resize.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Resize">Resize</span></div>
+                            </a>
+                        </li>
+                        <li class="two222 greyscale">
+                            <a class="three333" href="#">
+                                <div class="icon round3-btn">
+                                    <img src="../PHOTO_EDITOR/edit/grey_scale1.png" width="50" height="50" alt=""
+                                        class="tool-img zoom-out">
+                                </div>
+                                <div class="name"><span data-text="Grey Scale">Grey Scale</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--background-image:linear-gradient(rgba(41, 41, 41, 0.596) , rgb(0, 0, 0)) ,url("../images/pexels-trang-doan-1092730.jpg");
+    -->
+    <script src="effect.js"></script>
+    <script src="1.script.js"></script>
+
+</body>
+
+</html>

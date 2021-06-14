@@ -1,0 +1,23 @@
+#imageEditor {
+    margin:auto;
+    padding:1px;
+    border:0;
+    -moz-border-radius:0.2px;
+    -webkit-border-radius:0.2px;
+    border-radius:0.2px;
+    background-color:white;
+}
+
+#editorContainer {
+    display:block;
+    overflow: auto;
+    width: 800px;
+    height: 300px;
+}
+
+#editor {
+    display:block;
+    margin: auto;
+    width: 800px;
+    height: 300px;
+}

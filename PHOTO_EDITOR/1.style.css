@@ -1,0 +1,134 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:2px;
+}
+
+.main-container{
+    height:10vh;
+    width:100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.round-btn{
+    height:6rem;
+    position:fixed;
+    width:6rem;
+    
+    right:26px;
+    border-radius: 50%;
+}
+
+.add_img1{
+    border:3px solid blue;
+    position: absolute;
+    display: inline-block;
+    top:100px;
+    left:350px;
+    height:20vh;
+    width:10vw;
+    border-radius: 0%;
+}
+
+.roshan {
+    top:10px;
+    left:10px;
+}
+
+.roshan1{
+    top:10px;
+    left:10px;
+}
+
+.roshan2{
+    top:10px;
+    left:10px;
+}
+
+.roshan3{
+    top:10px;
+    left:10px;
+}
+
+.roshan4{
+    top:10px;
+    left:10px;
+}
+
+.roshan5{
+    top:10px;
+    left:10px;
+}
+.roshan6{
+    top:10px;
+    left:10px;
+}
+.zoom-outlast1{
+    position:absolute;
+    top: 70px;
+    left: 485px;
+}
+
+.zoom-outlast2{
+    position:absolute;
+    top: 210px;
+    left: 310px;
+}
+
+.zoom-outlast3{
+    position:absolute;
+    top: 210px;
+    left: 485px;
+}
+
+
+
+
+.files{
+    top:45%;
+    background-image: url('../PHOTO_EDITOR/imagefolder/file1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 255, 0.212);
+}
+
+
+.info{
+    top : 70%;
+    background-image: url('../PHOTO_EDITOR/imagefolder/i.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(187, 168, 168, 0.308);
+}
+.camera{
+    top: 20%;
+    background-image: url('../PHOTO_EDITOR/imagefolder/camera1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(230, 197, 197, 0.13);
+}
+
+.image-container{
+    height:90vh;
+    width:100vw;
+    background-image: url('../PHOTO_EDITOR/imagefolder/j.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(235, 228, 228, 0.247); 
+}
+
+.back-btn5{
+    width:6vw;
+    height:13vh;
+    position:absolute;
+    z-index:13;
+}
+.back-btn5:hover{
+    background-color: rgba(211, 211, 211, 0.356);
+}
+

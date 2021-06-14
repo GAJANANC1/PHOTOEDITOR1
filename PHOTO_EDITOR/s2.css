@@ -1,0 +1,69 @@
+html,
+body {
+    height: 100%;
+}
+
+.text_box {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+.center_buttons {
+    margin:auto;
+    display:block;
+}
+
+.menu1-container{
+    width: 100vw;
+    margin-top:100px;
+    display:flex;
+    background-color:lightgray;
+}
+
+.round2-btn{
+    height: 6rem;
+    width:6rem;
+    border-radius: 50%;
+}
+
+.styles{
+   
+    align-content: center;
+    background-image: url('../PHOTO_EDITOR/imagefolder/ms1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:14rem;
+}
+
+.accessories{
+    background-image: url('../PHOTO_EDITOR/imagefolder/accessories.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:11rem;
+}
+
+.effects{
+    background-image: url('../PHOTO_EDITOR/imagefolder/effects.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:11rem;
+}
+
+.edit{
+ 
+    background-image: url('../PHOTO_EDITOR/imagefolder/edit.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:11rem;
+
+}
